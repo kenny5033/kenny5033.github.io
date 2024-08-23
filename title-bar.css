@@ -1,0 +1,32 @@
+.nav-bar {
+    margin: 0;
+    padding: 0;
+    background-color: var(--secondary);
+    color: var(--accent);
+    font-family: monospace;
+    overflow: hidden;
+    height: 100%;
+    box-shadow: 0px 10px 5px rgb(55, 46, 46);
+}
+
+.nav-bar>h1 {
+    font-size: 40px;
+    margin-left: 15px;
+    float: left;
+}
+
+.nav-bar>.nav-links {
+    font-size: 20px;
+    margin-right: 15px;
+    float: right;
+    line-height: 500%;
+}
+
+a {
+    color: var(--accent);
+}
+
+a:hover {
+    color: var(--highlight);
+    cursor: pointer;
+}
