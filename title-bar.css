@@ -1,12 +1,19 @@
+body, html {
+    background-color: var(--light-primary);
+    margin: 0;
+    padding: 0;
+}
+
 .nav-bar {
     margin: 0;
     padding: 0;
-    background-color: var(--secondary);
-    color: var(--accent);
+    background-color: var(--dark-primary);
+    color: var(--light-primary);
     font-family: monospace;
     overflow: hidden;
     height: 100%;
-    box-shadow: 0px 10px 5px rgb(55, 46, 46);
+    width: 100%;
+    box-shadow: 0px 10px 20px var(--shadow);
 }
 
 .nav-bar>h1 {
@@ -22,11 +29,18 @@
     line-height: 500%;
 }
 
-a {
-    color: var(--accent);
+.nav-links>a:link {
+    color: var(--light-primary);
+    text-decoration: none;
 }
 
-a:hover {
-    color: var(--highlight);
+.nav-links>a:visited {
+    color: var(--light-primary);
+    text-decoration: none;
+}
+
+.nav-links>a:hover {
+    color: var(--light-accent);
+    text-decoration: none;
     cursor: pointer;
 }

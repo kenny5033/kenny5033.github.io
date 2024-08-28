@@ -1,25 +1,25 @@
-body, html {
-    background-color: var(--primary);
-    margin: 0;
-    padding: 0;
-}
-
-.main-content {
+.main-blurb {
     max-width: 60%;
     margin: auto;
     padding: 0;
-    background-color: var(--primary);
     font-family: monospace;
     text-align: left;
 }
 
-.main-content>h2 {
-    font-size: 30px;
-    color: var(--highlight);
+.main-blurb>h1 {
+    font-size: 60px;
+    color: var(--dark-primary);
+    text-align: right;
 }
 
-.main-content>p {
-    font-size: 15px;
-    color: var(--accent);
+.main-blurb>p {
+    font-size: 25px;
+    color: var(--dark-primary);
     overflow-wrap: break-word;
+}
+
+.main-blurb>.plugs-box {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
 }

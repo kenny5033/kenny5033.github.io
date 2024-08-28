@@ -1,0 +1,25 @@
+.main-feed {
+    max-width: 70%;
+    margin: auto;
+    padding: 0;
+    font-family: monospace;
+    text-align: center;
+}
+
+.feed-article {
+    border-radius: 2% / 40%;
+    background-color: var(--dark-primary);
+    color: var(--light-primary);
+}
+
+.feed-article>h1 {
+    font-size: 40px;
+    text-align: right;
+    margin-right: 15px;
+}
+
+.feed-article>p {
+    font-size: 20px;
+    text-align: left;
+    margin-left: 15px;
+}
