@@ -1,0 +1,3 @@
+[submodule "projects/turing"]
+	path = projects/turing
+	url = https://github.com/kenny5033/webTuringSimMulti
