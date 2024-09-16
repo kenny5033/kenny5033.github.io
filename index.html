@@ -9,14 +9,16 @@
 </head>
 <body>
   <ul class="falling-area">
-    <li class="text">mov $0x5A, %rax</li>
-    <li class="text">#include &ltstdlib.h&gt</li>
-    <li class="text">int main(void);</li>
+    <li class="text"><code>mov $0x5A, %rax</code></li>
+    <li class="text"><code>#include &ltstdlib.h&gt</code></li>
+    <li class="text"><code>int main(void);</code></li>
     <li class="text">
+      <pre><code>
         static struct<br>
         file_operations fops = {<br>
-            &emsp;&emsp;.open = chrDrvOpen<br>
+            &emsp;.open = chrDrvOpen<br>
         }
+      </code></pre>
     </li>
     <li class="text">xor %rcx, %rcx</li>
     <!-- Rest of empty li's are the falling squares -->
