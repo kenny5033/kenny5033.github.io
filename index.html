@@ -1,15 +1,25 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <link rel="stylesheet" href="site-colors.css">
-  <link rel="stylesheet" href="title-bar.css">
-  <link rel="stylesheet" href="index.css">
-  <link rel="stylesheet" href="feed.css">
+  <link rel="stylesheet" href="/css/site-colors.css">
+  <link rel="stylesheet" href="/css/title-bar.css">
+  <link rel="stylesheet" href="/css/index.css">
+  <link rel="stylesheet" href="/css/feed.css">
+  <link rel="stylesheet" href="/css/falling.css">
 </head>
 <body>
-  <ul class="circles">
-    <li></li>
-    <li></li>
+  <ul class="falling-area">
+    <li class="text">mov $0x5A, %rax</li>
+    <li class="text">#include &ltstdlib.h&gt</li>
+    <li class="text">int main(void);</li>
+    <li class="text">
+        static struct<br>
+        file_operations fops = {<br>
+            &emsp;&emsp;.open = chrDrvOpen<br>
+        }
+    </li>
+    <li class="text">xor %rcx, %rcx</li>
+    <!-- Rest of empty li's are the falling squares -->
     <li></li>
     <li></li>
     <li></li>
@@ -23,9 +33,9 @@
   <header class="nav-bar">
     <h1>Little Kendian</h1>
     <nav class="nav-links">
-      <a href="./projects.html">Projects</a> |
-      <a href="./blog">Blog</a> |
-      <a href="./about">About</a>
+      <a href="/projects">Projects</a> |
+      <a href="/blog">Blog</a> |
+      <a href="/about">About</a>
     </nav>
   </header>
 
@@ -38,8 +48,8 @@
     </p>
     <p>Also check me out at these sites:</p>
     <div class="plugs-box">
-      <a href="https://github.com/kenny5033" target="_blank"><img src="img/github-logo.png" width="50px"></a>
-      <a href="https://www.linkedin.com/in/kenneth-howes-b44aba298" target="_blank"><img src="img/linkedin-logo.png" width="50px"></a>
+      <a href="https://github.com/kenny5033" target="_blank"><img src="/img/github-logo.png" width="50px"></a>
+      <a href="https://www.linkedin.com/in/kenneth-howes-b44aba298" target="_blank"><img src="/img/linkedin-logo.png" width="50px"></a>
     </div>
     <h1>Recent Stuff</h1>
   </main>
@@ -64,6 +74,13 @@
     </article>
     <article class="feed-article">
       <h1>Turing Machine JS Emulator</h1>
+      <p>
+        Run a Turing Machine in your web browser! Made for a discrete 
+        mathematics class at Calvin University. Instructions on how to use 
+        are on the page. Make cool programs and watch a visualization of the 
+        Turing Machine carry out the code! Supports multiple tracks and 
+        multiple tapes.
+      </p>
       <p>Available <a href="/web-turing-emulator">here</a>.</p>
     </article>
   </div>
