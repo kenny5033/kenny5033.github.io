@@ -1,0 +1,43 @@
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+
+.card {
+  border: 3px solid black;
+  border-radius: 15px;
+  padding: 10px;
+  background-color: var(--light-primary);
+  position: relative;
+
+  h1 {
+    text-align: right;
+    font-size: 24pt;
+  }
+
+  summary {
+    font-size: 12pt;
+  }
+
+  a {
+    text-decoration: none;
+    color: inherit;
+    text-align: center;
+    display: inline-block;
+    font-size: 16pt;
+    width: 100%;
+
+    &:hover {
+      color: var(--light-accent);
+    }
+  }
+
+  transition-duration: 500ms;
+  transition-property: background-color, color;
+
+  &:hover {
+    background-color: var(--dark-primary);
+    color: var(--light-primary);
+  }
+}

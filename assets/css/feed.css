@@ -1,0 +1,44 @@
+.main-feed {
+    max-width: 70%;
+    margin: auto;
+    padding: 0;
+    font-family: monospace;
+    text-align: center;
+    background-color: transparent;
+}
+
+.feed-article {
+    border-radius: 0%;
+    background-color: var(--dark-primary);
+    color: var(--light-primary);
+    padding: 15px;
+    margin: 15px;
+}
+
+.feed-article>h1 {
+    font-size: 40px;
+    text-align: right;
+    margin: 0;
+}
+
+.feed-article>p {
+    font-size: 20px;
+    text-align: left;
+    margin-top: 10px;
+}
+
+.feed-article a:link {
+    color: var(--light-accent);
+    text-decoration: none;
+}
+
+.feed-article a:visited {
+    color: var(--light-accent);
+    text-decoration: none;
+}
+
+.feed-article a:hover {
+    color: var(--dark-accent);
+    text-decoration: none;
+    cursor: pointer;
+}

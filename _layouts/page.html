@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="/assets/css/site-colors.css">
+  <link rel="stylesheet" href="/assets/css/title-bar.css">
+  <link rel="stylesheet" href="/assets/css/index.css">
+  <link rel="stylesheet" href="/assets/css/feed.css">
+  <link rel="stylesheet" href="/assets/css/falling.css">
+  <link rel="stylesheet" href="/assets/css/card.css">
+  <style>
+    li {
+      list-style-type: none;
+      font-size: 1.25em;
+    }
+
+    .center {
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  </style>
+</head>
+<body>
+  <ul class="falling-area">
+    <li class="text"><code>mov $0x5A, %rax</code></li>
+    <li class="text"><code>#include &ltstdlib.h&gt</code></li>
+    <li class="text"><code>int main(void);</code></li>
+    <li class="text">
+      <pre><code>
+        static struct<br>
+        file_operations fops = {<br>
+            &emsp;.open = chrDrvOpen<br>
+        }
+      </code></pre>
+    </li>
+    <li class="text">xor %rcx, %rcx</li>
+    <!-- Rest of empty li's are the falling squares -->
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+  </ul>
+
+  <header class="nav-bar">
+    <h1>Little Kendian</h1>
+    <nav class="nav-links">
+      <a href="/">Home</a> |
+      <a href="/projects">Projects</a> |
+      <a href="/blog">Blog</a> |
+      <a href="/about">About</a>
+    </nav>
+  </header>
+
+  <main class="main-blurb">
+    <h1>{{ page.title }}</h1>
+    <p>{{ content }}</p>
+  </main>
+</body>
+</html>

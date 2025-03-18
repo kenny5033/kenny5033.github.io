@@ -1,0 +1,31 @@
+body {
+  overflow-x: hidden;
+  background-color: transparent;
+}
+
+.main-blurb {
+    max-width: 60%;
+    margin: auto;
+    padding: 0;
+    font-family: monospace;
+    text-align: left;
+}
+
+.main-blurb>h1 {
+    font-size: 60px;
+    color: var(--dark-primary);
+    text-align: right;
+}
+
+.main-blurb>p {
+    font-size: 25px;
+    color: var(--dark-primary);
+    overflow-wrap: break-word;
+}
+
+.main-blurb>.plugs-box {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+}
+

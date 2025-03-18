@@ -1,0 +1,136 @@
+.falling-area {
+    position: absolute;
+    top: 0;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 1015px;
+    overflow: hidden;
+    pointer-events: none;
+}
+
+.falling-area li {
+    position: absolute;
+    display: block;
+    list-style: none;
+    animation: falling-list 25s linear infinite;
+    top: -150px;
+    background: var(--dark-accent);
+    z-index: -10;
+}
+
+.falling-area li.text {
+    height: 0px;
+    width: min-content;
+    white-space: nowrap;
+}
+
+.falling-area li:nth-child(1){
+    font-size: 15px;
+    left: 5%;
+    animation-delay: 0s;
+}
+
+.falling-area li:nth-child(2){
+    font-size: 13px;
+    left: 23%;
+    animation-delay: 2s;
+    animation-duration: 12s;
+}
+
+.falling-area li:nth-child(3){
+    font-size: 17px;
+    left: 48%;
+    animation-delay: 4s;
+}
+
+.falling-area li:nth-child(4){
+    font-size: 10px;
+    left: 64%;
+    animation-delay: 0s;
+    animation-duration: 18s;
+}
+
+.falling-area li:nth-child(5){
+    font-size: 20px;
+    left: 80%;
+    animation-delay: 0s;
+}
+
+.falling-area li:nth-child(6){
+    left: 75%;
+    width: 110px;
+    height: 110px;
+    animation-delay: 3s;
+}
+
+.falling-area li:nth-child(7){
+    left: 35%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 7s;
+}
+
+.falling-area li:nth-child(8){
+    left: 50%;
+    width: 25px;
+    height: 25px;
+    animation-delay: 15s;
+    animation-duration: 45s;
+}
+
+.falling-area li:nth-child(9){
+    left: 20%;
+    width: 15px;
+    height: 15px;
+    animation-delay: 2s;
+    animation-duration: 35s;
+}
+
+.falling-area li:nth-child(10){
+    left: 85%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 0s;
+    animation-duration: 11s;
+}
+
+.falling-area li:nth-child(11){
+    left: 67%;
+    width: 52px;
+    height: 52px;
+    animation-delay: 0s;
+    animation-duration: 9s;
+}
+
+.falling-area li:nth-child(12){
+    left: 7%;
+    width: 72px;
+    height: 72px;
+    animation-delay: 10s;
+    animation-duration: 18s;
+}
+
+.falling-area li:nth-child(13){
+    left: 24%;
+    width: 100px;
+    height: 100px;
+    animation-delay: 3s;
+    animation-duration: 7s;
+}
+
+@keyframes falling-list {
+
+    0% {
+        transform: translateY(0px) rotate(0deg);
+        opacity: 1;
+        border-radius: 0;
+    }
+
+    100% {
+        transform: translateY(1000px) rotate(720deg);
+        opacity: 0;
+        border-radius: 50%;
+    }
+
+}
