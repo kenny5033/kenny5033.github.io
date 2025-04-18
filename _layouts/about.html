@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="../assets/css/falling.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>{{ post.title }}</title>
+</head>
+<body class="bg-gray-100 text-gray-800">
+  {% include components/header.html %}
+
+  <h1 class="text-4xl font-bold text-center text-gray-900 my-6">
+    {{ page.title }}
+  </h1>
+  {% assign content = content | split: '<!--section-->' %}
+  {% for section in content %}
+  <div class="max-w-[60%] mx-auto my-4 p-4 bg-white rounded-lg shadow-md">
+    {{ section | safe }}
+  </div>
+  {% endfor %}
+</body>
+</html>

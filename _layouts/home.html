@@ -1,63 +1,36 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <link rel="stylesheet" href="/assets/css/site-colors.css">
-  <link rel="stylesheet" href="/assets/css/title-bar.css">
-  <link rel="stylesheet" href="/assets/css/index.css">
-  <link rel="stylesheet" href="/assets/css/feed.css">
-  <link rel="stylesheet" href="/assets/css/falling.css">
+  <link rel="stylesheet" href="../assets/css/falling.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>{{ post.title }}</title>
 </head>
-<body>
-  <ul class="falling-area">
-    <li class="text"><code>mov $0x5A, %rax</code></li>
-    <li class="text"><code>#include &ltstdlib.h&gt</code></li>
-    <li class="text"><code>int main(void);</code></li>
-    <li class="text">
-      <pre><code>
-        static struct<br>
-        file_operations fops = {<br>
-            &emsp;.open = chrDrvOpen<br>
-        }
-      </code></pre>
-    </li>
-    <li class="text">xor %rcx, %rcx</li>
-    <!-- Rest of empty li's are the falling squares -->
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-  </ul>
+<body class="bg-gray-100 text-gray-800">
+  {% include components/header.html %}
 
-  <header class="nav-bar">
-    <h1>Little Kendian</h1>
-    <nav class="nav-links">
-      <a href="/projects">Projects</a> |
-      <a href="/blog">Blog</a> |
-      <a href="/about">About</a>
-    </nav>
-  </header>
-
-  <main class="main-blurb">
-    <h1>{{ page.title }}</h1>
-    <p>{{ content }}</p>
-    <p>Also check me out at these sites:</p>
-    <div class="plugs-box">
-      <a href="https://github.com/kenny5033" target="_blank"><img src="/assets/images/github-logo.png" width="50px"></a>
-      <a href="https://www.linkedin.com/in/kenneth-howes-b44aba298" target="_blank"><img src="/assets/images/linkedin-logo.png" width="50px"></a>
+  <main class="main-blurb p-6 text-center">
+    <h1 class="text-3xl font-bold text-right max-w-3xl mx-auto">{{ page.title }}</h1>
+    <div class="mt-4 text-left max-w-4xl mx-auto">{{ content }}</div>
+    <p class="mt-4">Also check me out at these sites:</p>
+    <div class="plugs-box flex justify-center space-x-4 mt-4">
+        <a href="https://github.com/kenny5033" target="_blank">
+          <img src="/assets/images/github-logo.png" class="w-12">
+        </a>
+        <a href="https://www.linkedin.com/in/kenneth-howes-b44aba298" target="_blank">
+          <img src="/assets/images/linkedin-logo.png" class="w-12">
+        </a>
     </div>
-    <h1>Recent Stuff</h1>
+    <h2 class="text-2xl font-bold mt-8">Recent Stuff</h2>
   </main>
 
-  <div class="main-feed">
+  <div class="grid grid-cols-2 gap-4">
     {% for post in site.posts %}
-    <article class="feed-article">
-      <h1>{{post.title}}</h1>
-      <p>{{post.description}}</p>
-    </article>
+    {% include components/card.html 
+      title=post.title
+      description=post.description
+      url=post.project-url
+      continue-text="Read more"
+    %}
     {% endfor %}
   </div>
 </body>
